@@ -35,10 +35,10 @@ Bu dosyayı birlikte takip edeceğiz. Tamamlanan maddeleri `[x]` yaparak ilerley
 - [x] Sonuçları model bazında karşılaştırma tablosuna dök
 
 ## Faz 6 - Görselleştirme (t-SNE)
-- [ ] Her model için soru+cevap embedding'lerine t-SNE uygula
-- [ ] Soru/cevap türüne göre renklendirilmiş 2B grafik üret
-- [ ] 6 model için toplam 6 grafik dosyasını kaydet
-- [ ] Grafiklerden kısa gözlemleri not et
+- [x] Her model için soru+cevap embedding'lerine t-SNE uygula
+- [x] Soru/cevap türüne göre renklendirilmiş 2B grafik üret
+- [x] 6 model için toplam 6 grafik dosyasını kaydet
+- [x] Grafiklerden kısa gözlemleri not et
 
 ## Faz 7 - Analiz ve Yorum
 - [ ] En iyi ve en zayıf model davranışlarını yorumla
