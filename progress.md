@@ -41,10 +41,10 @@ Bu dosyayı birlikte takip edeceğiz. Tamamlanan maddeleri `[x]` yaparak ilerley
 - [x] Grafiklerden kısa gözlemleri not et
 
 ## Faz 7 - Analiz ve Yorum
-- [ ] En iyi ve en zayıf model davranışlarını yorumla
-- [ ] Top1/Top5 farklarını açıklayan örnekler seç
-- [ ] Hatalı retrieval örnekleri üzerinden hata analizi yap
-- [ ] Veri kümesi farklarının etkisini tartış
+- [x] En iyi ve en zayıf model davranışlarını yorumla
+- [x] Top1/Top5 farklarını açıklayan örnekler seç
+- [x] Hatalı retrieval örnekleri üzerinden hata analizi yap
+- [x] Veri kümesi farklarının etkisini tartış
 
 ## Faz 8 - Sunum Hazırlığı
 - [ ] Sunum iskeletini hazırla (problem, veri, yöntem, sonuç, yorum)
