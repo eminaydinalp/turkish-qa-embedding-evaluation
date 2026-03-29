@@ -39,6 +39,11 @@ datasets:
     repo_id: dilanbakr/tquad
     processed_file: data/processed/tquad_qa.parquet
     min_pairs_required: 1000
+  - key: tquad_1000
+    enabled: true
+    repo_id: dilanbakr/tquad
+    processed_file: data/processed/tquad_qa_1000.parquet
+    min_pairs_required: 1000
 
 models:
   - key: multilingual_e5_large_instruct

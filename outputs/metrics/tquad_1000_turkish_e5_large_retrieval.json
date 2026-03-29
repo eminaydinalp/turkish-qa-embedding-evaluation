@@ -1,0 +1,11 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "turkish_e5_large",
+  "num_pairs": 1000,
+  "similarity": "angle",
+  "top_k": 5,
+  "q_to_a_top1": 0.196,
+  "q_to_a_top5": 0.376,
+  "a_to_q_top1": 0.152,
+  "a_to_q_top5": 0.312
+}

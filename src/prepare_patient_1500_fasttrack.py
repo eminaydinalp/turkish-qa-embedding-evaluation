@@ -12,7 +12,7 @@ import yaml
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Create a 1500-row patient subset and reuse already computed model embeddings."
+        description="Create a subset dataset and reuse already computed model embeddings when available."
     )
     parser.add_argument("--config", type=Path, default=Path("configs/experiment.yaml"))
     parser.add_argument("--source-key", type=str, default="patient_doctor_qa_tr")
@@ -46,14 +46,6 @@ def output_paths_for_model(base_dir: Path, dataset_key: str, model_key: str) -> 
     }
 
 
-def create_subset(full_df: pd.DataFrame, sample_size: int, seed: int) -> pd.DataFrame:
-    if len(full_df) < sample_size:
-        raise ValueError(f"Requested sample_size={sample_size}, but dataset has only {len(full_df)} rows")
-    sub = full_df.sample(n=sample_size, random_state=seed).reset_index(drop=True)
-    sub["id"] = [f"patient_doctor_qa_tr_1500_{idx:05d}" for idx in range(len(sub))]
-    return sub
-
-
 def main() -> None:
     args = parse_args()
     cfg = load_config(args.config)
@@ -69,7 +61,7 @@ def main() -> None:
     full_df = full_df[["id", "question", "answer"]].copy()
     sampled_original = full_df.sample(n=args.sample_size, random_state=args.seed).reset_index(drop=True)
     subset_df = sampled_original.copy()
-    subset_df["id"] = [f"patient_doctor_qa_tr_1500_{idx:05d}" for idx in range(len(subset_df))]
+    subset_df["id"] = [f"{args.target_key}_{idx:05d}" for idx in range(len(subset_df))]
 
     target_data_path.parent.mkdir(parents=True, exist_ok=True)
     subset_df.to_parquet(target_data_path, index=False)
@@ -130,7 +122,7 @@ def main() -> None:
         "transferred_models": transferred_models,
         "skipped_models": skipped_models,
     }
-    summary_path = target_data_path.with_name("patient_doctor_qa_tr_1500_reuse_summary.json")
+    summary_path = target_data_path.with_name(f"{args.target_key}_reuse_summary.json")
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"Saved subset: {target_data_path} ({len(subset_df)} rows)")

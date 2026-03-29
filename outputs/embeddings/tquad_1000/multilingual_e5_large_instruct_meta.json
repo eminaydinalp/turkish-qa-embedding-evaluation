@@ -1,0 +1,13 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "multilingual_e5_large_instruct",
+  "hf_id": "intfloat/multilingual-e5-large-instruct",
+  "trust_remote_code": false,
+  "model_device": "mps",
+  "num_pairs": 1000,
+  "normalize_embeddings": true,
+  "batch_size": 32,
+  "question_prefix": "Instruct: Given a user question, retrieve the most relevant answer passage.\nQuery: ",
+  "answer_prefix": "passage: ",
+  "embedding_dim": 1024
+}

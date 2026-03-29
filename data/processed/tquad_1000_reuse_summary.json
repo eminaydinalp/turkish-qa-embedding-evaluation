@@ -1,0 +1,15 @@
+{
+  "source_dataset": "tquad",
+  "target_dataset": "tquad_1000",
+  "sample_size": 1000,
+  "seed": 42,
+  "transferred_models": [],
+  "skipped_models": [
+    "multilingual_e5_large_instruct",
+    "bge_m3",
+    "multilingual_e5_large",
+    "kalm_embedding_multilingual_mini",
+    "gte_multilingual_base",
+    "turkish_e5_large"
+  ]
+}

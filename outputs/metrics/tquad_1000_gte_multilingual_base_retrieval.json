@@ -1,0 +1,11 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "gte_multilingual_base",
+  "num_pairs": 1000,
+  "similarity": "angle",
+  "top_k": 5,
+  "q_to_a_top1": 0.058,
+  "q_to_a_top5": 0.148,
+  "a_to_q_top1": 0.07,
+  "a_to_q_top5": 0.169
+}

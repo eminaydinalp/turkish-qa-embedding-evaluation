@@ -1,0 +1,11 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "multilingual_e5_large_instruct",
+  "num_pairs": 1000,
+  "similarity": "angle",
+  "top_k": 5,
+  "q_to_a_top1": 0.125,
+  "q_to_a_top5": 0.248,
+  "a_to_q_top1": 0.149,
+  "a_to_q_top5": 0.297
+}

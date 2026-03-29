@@ -1,0 +1,13 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "kalm_embedding_multilingual_mini",
+  "hf_id": "HIT-TMG/KaLM-embedding-multilingual-mini-v1",
+  "trust_remote_code": false,
+  "model_device": "mps",
+  "num_pairs": 1000,
+  "normalize_embeddings": true,
+  "batch_size": 32,
+  "question_prefix": "",
+  "answer_prefix": "",
+  "embedding_dim": 896
+}

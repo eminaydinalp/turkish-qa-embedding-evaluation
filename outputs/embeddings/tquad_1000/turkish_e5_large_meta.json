@@ -1,0 +1,13 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "turkish_e5_large",
+  "hf_id": "ytu-ce-cosmos/turkish-e5-large",
+  "trust_remote_code": false,
+  "model_device": "mps",
+  "num_pairs": 1000,
+  "normalize_embeddings": true,
+  "batch_size": 32,
+  "question_prefix": "query: ",
+  "answer_prefix": "passage: ",
+  "embedding_dim": 1024
+}

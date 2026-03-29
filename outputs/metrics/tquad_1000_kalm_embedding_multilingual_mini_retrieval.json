@@ -1,0 +1,11 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "kalm_embedding_multilingual_mini",
+  "num_pairs": 1000,
+  "similarity": "angle",
+  "top_k": 5,
+  "q_to_a_top1": 0.068,
+  "q_to_a_top5": 0.143,
+  "a_to_q_top1": 0.068,
+  "a_to_q_top5": 0.141
+}

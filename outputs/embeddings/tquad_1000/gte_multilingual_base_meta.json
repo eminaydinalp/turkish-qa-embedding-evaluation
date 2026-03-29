@@ -1,0 +1,13 @@
+{
+  "dataset_key": "tquad_1000",
+  "model_key": "gte_multilingual_base",
+  "hf_id": "Alibaba-NLP/gte-multilingual-base",
+  "trust_remote_code": true,
+  "model_device": "cpu",
+  "num_pairs": 1000,
+  "normalize_embeddings": true,
+  "batch_size": 32,
+  "question_prefix": "",
+  "answer_prefix": "",
+  "embedding_dim": 768
+}
