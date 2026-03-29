@@ -1,0 +1,24 @@
+seed: 42
+
+device: auto
+batch_size: 32
+max_length: 512
+normalize_embeddings: true
+
+retrieval:
+  top_k: 5
+  similarity: angle
+
+tsne:
+  n_components: 2
+  perplexity: 30
+  learning_rate: auto
+  init: pca
+  random_state: 42
+
+paths:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  embeddings_dir: outputs/embeddings
+  metrics_dir: outputs/metrics
+  plots_dir: outputs/plots
