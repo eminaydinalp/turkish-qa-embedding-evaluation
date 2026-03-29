@@ -1,0 +1,16 @@
+{
+  "source_dataset": "patient_doctor_qa_tr",
+  "target_dataset": "patient_doctor_qa_tr_1500",
+  "sample_size": 1500,
+  "seed": 42,
+  "transferred_models": [
+    "multilingual_e5_large_instruct",
+    "bge_m3",
+    "multilingual_e5_large"
+  ],
+  "skipped_models": [
+    "kalm_embedding_multilingual_mini",
+    "gte_multilingual_base",
+    "turkish_e5_large"
+  ]
+}

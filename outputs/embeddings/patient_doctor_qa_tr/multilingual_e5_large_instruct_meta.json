@@ -1,0 +1,11 @@
+{
+  "dataset_key": "patient_doctor_qa_tr",
+  "model_key": "multilingual_e5_large_instruct",
+  "hf_id": "intfloat/multilingual-e5-large-instruct",
+  "num_pairs": 11736,
+  "normalize_embeddings": true,
+  "batch_size": 32,
+  "question_prefix": "Instruct: Given a user question, retrieve the most relevant answer passage.\nQuery: ",
+  "answer_prefix": "passage: ",
+  "embedding_dim": 1024
+}

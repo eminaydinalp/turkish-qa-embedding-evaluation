@@ -22,3 +22,66 @@ paths:
   embeddings_dir: outputs/embeddings
   metrics_dir: outputs/metrics
   plots_dir: outputs/plots
+
+datasets:
+  - key: patient_doctor_qa_tr
+    enabled: false
+    repo_id: kayrab/patient-doctor-qa-tr-5695
+    processed_file: data/processed/patient_doctor_qa_tr_qa.parquet
+    min_pairs_required: 1000
+  - key: patient_doctor_qa_tr_1500
+    enabled: true
+    repo_id: kayrab/patient-doctor-qa-tr-5695
+    processed_file: data/processed/patient_doctor_qa_tr_qa_1500.parquet
+    min_pairs_required: 1000
+  - key: tquad
+    enabled: false
+    repo_id: dilanbakr/tquad
+    processed_file: data/processed/tquad_qa.parquet
+    min_pairs_required: 1000
+
+models:
+  - key: multilingual_e5_large_instruct
+    hf_id: intfloat/multilingual-e5-large-instruct
+    family: e5
+    multilingual: true
+    use_task_prefix: true
+    query_prefix: "Instruct: Given a user question, retrieve the most relevant answer passage.\nQuery: "
+    passage_prefix: "passage: "
+  - key: bge_m3
+    hf_id: BAAI/bge-m3
+    family: bge
+    multilingual: true
+    use_task_prefix: false
+    query_prefix: ""
+    passage_prefix: ""
+  - key: multilingual_e5_large
+    hf_id: intfloat/multilingual-e5-large
+    family: e5
+    multilingual: true
+    use_task_prefix: true
+    query_prefix: "query: "
+    passage_prefix: "passage: "
+  - key: kalm_embedding_multilingual_mini
+    hf_id: HIT-TMG/KaLM-embedding-multilingual-mini-v1
+    family: kalm
+    multilingual: true
+    use_task_prefix: false
+    query_prefix: ""
+    passage_prefix: ""
+  - key: gte_multilingual_base
+    hf_id: Alibaba-NLP/gte-multilingual-base
+    family: gte
+    multilingual: true
+    trust_remote_code: true
+    force_device: cpu
+    use_task_prefix: false
+    query_prefix: ""
+    passage_prefix: ""
+  - key: turkish_e5_large
+    hf_id: ytu-ce-cosmos/turkish-e5-large
+    family: e5
+    multilingual: true
+    use_task_prefix: true
+    query_prefix: "query: "
+    passage_prefix: "passage: "

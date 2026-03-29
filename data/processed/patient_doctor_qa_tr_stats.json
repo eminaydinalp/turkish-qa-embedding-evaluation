@@ -1,0 +1,23 @@
+{
+  "dataset_key": "patient_doctor_qa_tr",
+  "repo_id": "kayrab/patient-doctor-qa-tr-5695",
+  "license": "mit",
+  "source_splits": {
+    "train": 22776,
+    "test": 2532
+  },
+  "preprocess": {
+    "rows_before": 25308,
+    "removed_empty": 0,
+    "removed_short": 708,
+    "removed_duplicates": 12864,
+    "rows_after": 11736
+  },
+  "summary": {
+    "num_pairs": 11736,
+    "question_avg_chars": 275.0015337423313,
+    "answer_avg_chars": 430.7759884117246,
+    "question_median_chars": 268.0,
+    "answer_median_chars": 453.0
+  }
+}

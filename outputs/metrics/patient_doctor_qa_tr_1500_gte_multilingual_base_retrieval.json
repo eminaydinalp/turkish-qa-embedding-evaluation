@@ -1,0 +1,11 @@
+{
+  "dataset_key": "patient_doctor_qa_tr_1500",
+  "model_key": "gte_multilingual_base",
+  "num_pairs": 1500,
+  "similarity": "angle",
+  "top_k": 5,
+  "q_to_a_top1": 0.442,
+  "q_to_a_top5": 0.7346666666666667,
+  "a_to_q_top1": 0.45666666666666667,
+  "a_to_q_top5": 0.7506666666666667
+}

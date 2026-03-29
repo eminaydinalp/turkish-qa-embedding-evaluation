@@ -1,0 +1,23 @@
+{
+  "dataset_key": "tquad",
+  "repo_id": "dilanbakr/tquad",
+  "license": null,
+  "source_splits": {
+    "train": 8308,
+    "validation": 2676
+  },
+  "preprocess": {
+    "rows_before": 10984,
+    "removed_empty": 0,
+    "removed_short": 227,
+    "removed_duplicates": 2573,
+    "rows_after": 8184
+  },
+  "summary": {
+    "num_pairs": 8184,
+    "question_avg_chars": 62.71419843597263,
+    "answer_avg_chars": 27.876344086021504,
+    "question_median_chars": 58.0,
+    "answer_median_chars": 17.0
+  }
+}

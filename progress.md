@@ -8,31 +8,31 @@ Bu dosyayı birlikte takip edeceğiz. Tamamlanan maddeleri `[x]` yaparak ilerley
 - [x] Deney ayarlarını tek bir config dosyasında tanımla (seed, batch size, cihaz, vb.)
 
 ## Faz 2 - Veri Kümelerini Bulma ve Hazırlama
-- [ ] En az 1000 QA içeren 1. Türkçe veri kümesini seç
-- [ ] En az 1000 QA içeren 2. Türkçe veri kümesini seç
-- [ ] Lisans ve kullanım uygunluğunu not et
-- [ ] Her veri kümesini ortak formata dönüştür (`id`, `question`, `answer`)
-- [ ] Temizlik yap (boş/kısa kayıtlar, tekrarlar, bozuk metin)
-- [ ] Veri kümesi istatistiklerini çıkar (örnek sayısı, ortalama uzunluk, vb.)
+- [x] En az 1000 QA içeren 1. Türkçe veri kümesini seç
+- [x] En az 1000 QA içeren 2. Türkçe veri kümesini seç
+- [x] Lisans ve kullanım uygunluğunu not et
+- [x] Her veri kümesini ortak formata dönüştür (`id`, `question`, `answer`)
+- [x] Temizlik yap (boş/kısa kayıtlar, tekrarlar, bozuk metin)
+- [x] Veri kümesi istatistiklerini çıkar (örnek sayısı, ortalama uzunluk, vb.)
 
 ## Faz 3 - Model Seçimi
-- [ ] MTEB leaderboard'dan ilk 100 içinde, multilingual ve 1B'den küçük 5 modeli belirle
-- [ ] `ytu-ce-cosmos/turkish-e5-large` modelini ekle
-- [ ] Seçilen 6 modelin adlarını ve kısa gerekçelerini tabloya yaz
-- [ ] E5 için task text stratejisini netleştir (`query:` / `passage:`)
+- [x] MTEB leaderboard'dan ilk 100 içinde, multilingual ve 1B'den küçük 5 modeli belirle
+- [x] `ytu-ce-cosmos/turkish-e5-large` modelini ekle
+- [x] Seçilen 6 modelin adlarını ve kısa gerekçelerini tabloya yaz
+- [x] E5 için task text stratejisini netleştir (`query:` / `passage:`)
 
 ## Faz 4 - Embedding Üretimi
-- [ ] Her veri kümesi için soruların embedding'lerini üret
-- [ ] Her veri kümesi için cevapların embedding'lerini üret
-- [ ] Her model için embedding'leri diske kaydet (tekrar kullanım için)
+- [x] Her veri kümesi için soruların embedding'lerini üret
+- [x] Her veri kümesi için cevapların embedding'lerini üret
+- [x] Her model için embedding'leri diske kaydet (tekrar kullanım için)
 
 ## Faz 5 - Benzerlik ve Retrieval Değerlendirmesi
-- [ ] Açı tabanlı benzerlik hesaplamasını uygula (cosine -> arccos)
-- [ ] Soru -> Cevap için top-5 adayları bul
-- [ ] Top1 ve Top5 başarılarını hesapla (Soru -> Cevap)
-- [ ] Cevap -> Soru için top-5 adayları bul
-- [ ] Top1 ve Top5 başarılarını hesapla (Cevap -> Soru)
-- [ ] Sonuçları model bazında karşılaştırma tablosuna dök
+- [x] Açı tabanlı benzerlik hesaplamasını uygula (cosine -> arccos)
+- [x] Soru -> Cevap için top-5 adayları bul
+- [x] Top1 ve Top5 başarılarını hesapla (Soru -> Cevap)
+- [x] Cevap -> Soru için top-5 adayları bul
+- [x] Top1 ve Top5 başarılarını hesapla (Cevap -> Soru)
+- [x] Sonuçları model bazında karşılaştırma tablosuna dök
 
 ## Faz 6 - Görselleştirme (t-SNE)
 - [ ] Her model için soru+cevap embedding'lerine t-SNE uygula

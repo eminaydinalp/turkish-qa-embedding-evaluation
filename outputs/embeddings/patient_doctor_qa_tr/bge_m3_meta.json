@@ -1,0 +1,11 @@
+{
+  "dataset_key": "patient_doctor_qa_tr",
+  "model_key": "bge_m3",
+  "hf_id": "BAAI/bge-m3",
+  "num_pairs": 11736,
+  "normalize_embeddings": true,
+  "batch_size": 32,
+  "question_prefix": "",
+  "answer_prefix": "",
+  "embedding_dim": 1024
+}
